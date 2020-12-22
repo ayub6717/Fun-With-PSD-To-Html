@@ -1,0 +1,287 @@
+body{
+    font-size: 100%;
+}
+
+/* HEADER */
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.flex-container > div {
+    padding: 5px;
+}
+
+.input-field{
+    background-color: rgb(34, 32, 32);
+    color: white;
+    border: none;
+    padding: 5px;
+    
+}
+
+@media (max-width:  600px){
+    /* .flex-container{
+        flex-direction: column;
+    } */
+    #head-text-1{
+        font-size: 10PX;
+    }
+
+    #head-text-2{
+        font-size: 10PX;
+    }
+    .input-field{
+        width: 100px;
+        font-size: 10px; 
+    }
+}
+@media (max-width:  367px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+/* NAV BAR  START*/
+nav{
+    padding-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 100px;
+}
+
+li {
+    float: left;
+    
+}
+li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(95, 93, 93);
+    margin-top: 20px;
+    border-right: 1px  solid rgb(78, 70, 70);
+    line-height: 0px;    
+    font-family: sans-serif;
+    font-size: small;
+}
+.active a{
+    color: rgb(3, 3, 3);
+}
+
+li a:hover{
+    color: #111;
+}
+
+.img-1{
+    
+    margin-top: -30px;
+    height: 118px;
+    width: 152px;
+    float: left;
+    
+}
+.donate{
+    background-color: rgb(61, 121, 118);
+    color: white;    
+}
+
+nav ul li:last-child a{
+    border: none;
+
+}
+
+@media screen and (max-width : 600px){
+    ul{
+        padding-left: 0px;
+        float: left;
+        margin-top: -40px;
+        /* margin-bottom:-27px; */
+    }
+    li{
+        float: left;
+    }
+    li a{
+        font-size: 10px;
+        line-height: 0px;
+    }
+    .img-1{
+    
+        margin-top: -20px;
+        height: 80px;
+        width: 102px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    li a{
+        font-size: 7px;
+        border: none
+    }
+}
+
+@media screen and (max-width: 360px) {
+    li a{
+        font-size: 6px;
+        border: none
+    }
+}
+/* NAV BAR  end*/
+
+/* background img */
+
+.img-bg{
+    background-image: url(img/hand_up.jpg);
+    width: 100%;
+    height: 100%; 
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position: center top ;
+    text-align: center;
+}
+#text-1{
+    text-align: center;
+    background-color: rgb(19, 121, 87);
+    color: black;
+    padding: 5px;
+    font-size: 10px;
+    margin-top:120px;
+    position: absolute; 
+    width:120px; 
+    left: 50%; 
+    margin-left: -65px; 
+}
+
+#text-2{
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-top:140px;
+}
+#text-3{
+    text-align: center;
+}
+#text-4{
+    background-color: rgb(104, 156, 132);
+    border: none;
+    padding: 5px;
+    font-size: 10px;
+    
+}
+
+@media screen and (max-width: 898px){
+    #text-1{
+        margin-top: 106px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #text-1{
+        padding: 5px;
+        font-size: 6px;
+        margin-top:70px;
+        width: 80px;
+        margin-left: -45px; 
+    }
+
+    #text-2{
+        font-size: 15px;
+        margin-top:100px;
+    }
+    #text-3{
+        text-align: center;
+        font-size: 10px;
+    }
+    #text-4{
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #text-1{
+        padding: 5px;
+        font-size: 6px;
+        margin-top:40px;
+        width: 80px;
+        margin-left: -45px; 
+    }
+
+    #text-2{
+        font-size: 10px;
+        margin-top:70px;
+    }
+    #text-3{
+        text-align: center;
+        font-size: 7px;
+    }
+    #text-4{
+        font-size: 4px;
+    }
+}
+@media screen and (max-width : 1100px){
+    .img-bg{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width : 650px){
+    .img-bg{
+        float: left;
+        margin-top: 20px;
+        height: 300px;
+    }
+}
+
+/* ==============card============ */
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.flex-container .one {
+    background-color: #f1f1f1;
+    width: 33%;
+    margin: 1px;
+    height: 180px;
+    margin-top: 0;
+    padding: 20px;
+    color: white;
+    margin-top: -121px !important;
+  }
+  
+
+  .card-img-1{
+      background-image: url(img/charitable-giving.jpg);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100% 100%;
+      width: 100%;
+  }
+
+  .card-img-2{
+    background-image: url(img/Volunteers.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.card-img-3{
+    background-image: url(img/scholarship.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    width: 100%;
+}
